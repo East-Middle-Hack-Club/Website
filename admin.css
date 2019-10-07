@@ -1,8 +1,8 @@
-html {
-  text-align:center;
-  background: rgb(255, 255, 255);
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 150%;
+head {
+  text-align: center
+}
+.activeee {
+  background-color: rgb(255, 100, 0)
 }
 .topnav {
   background-color: rgba(41, 41, 41, 0.555);
@@ -19,10 +19,6 @@ html {
 .topnav a:hover {
   background-color: gainsboro;
   color: black;
-}
-.topnav a.active {
-  background-color:rgb(255, 100, 0);
-  color: white;
 }
 .tooltip {
   position: relative;
@@ -103,37 +99,116 @@ html {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-html {
-  text-align:center;
-  background: rgb(255, 255, 255);
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 150%;
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
-.colead {
-  font-weight: bold;
+.active, .collapsible:hover {
+  background-color: #555;
 }
-.asstlead {
+.collapsible:after {
+  content: '\002B';
+  color: white;
   font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 18.7%;
+  text-align: left;
+  padding-left: 20px;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.name {
-  font-weight: bold;
+
+
+* {
+  box-sizing: border-box;
 }
-h3 {
-  font-weight: bold;
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
-h5 {
-  font-weight: bold;
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
 }
 .column2 {
   float: left;
   width: 50%;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+h3 {
+  font-size-adjust: 150%;
+  font-weight: bold;
 }
