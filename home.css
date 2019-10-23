@@ -4,6 +4,10 @@ html {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 150%;
 }
+iframe {
+  width: 60%;
+  height: 600px;
+}
 .topnav {
   background-color: rgba(41, 41, 41, 0.555);
   overflow: hidden;
