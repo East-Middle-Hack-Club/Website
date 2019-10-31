@@ -4,14 +4,14 @@ html {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 150%;
 }
-iframe {
-  width: 60%;
-  height: 600px;
-}
 .topnav {
   background-color: rgba(41, 41, 41, 0.555);
   overflow: hidden;
 }
+.frontpagetxt {
+  margin-left: 65px;
+  margin-right: 65px;
+} 
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -131,6 +131,16 @@ html {
 .name {
   font-weight: bold;
 }
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: silver;
+  color: #383838;
+  text-align: center;
+  border-style: groove;
+}
 h3 {
   font-weight: bold;
 }
@@ -140,7 +150,4 @@ h5 {
 .column2 {
   float: left;
   width: 50%;
-}
-.horembe {
-  font-weight: 8px
 }

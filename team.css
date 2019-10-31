@@ -14,10 +14,6 @@
   background-color: #ddd;
   color: black;
 }
-.topnav a.active {
-  background-color:rgb(255, 100, 0);
-  color: white;
-}
 .footer {
   position: bottom;
   left: 0;
@@ -27,6 +23,14 @@
   color: #383838;
   text-align: center;
   border-style: groove;
+}
+.margintxt {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.topnav a.active {
+  background-color:rgb(255, 100, 0);
+  color: white;
 }
 html {
   text-align:center;
@@ -115,4 +119,10 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
 }

@@ -1,3 +1,9 @@
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+}
 .topnav {
   background-color: rgba(41, 41, 41, 0.555);
   overflow: hidden;
@@ -10,14 +16,6 @@
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color:rgb(255, 100, 0);
-  color: white;
-}
 .footer {
   position: bottom;
   left: 0;
@@ -28,49 +26,24 @@
   text-align: center;
   border-style: groove;
 }
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: rgb(255, 100, 0);
+  color: white;
+}
 html {
   text-align:center;
   background: rgb(255, 255, 255);
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 150%;
 }
-body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 360px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.tooltip .tooltiptext::after {
+.row:after {
   content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+  display: table;
+  clear: both;
 }
 .navbar {
   overflow: hidden;
@@ -115,4 +88,41 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+html {
+  text-align:center;
+  background: rgb(255, 255, 255);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 150%;
 }

@@ -8,6 +8,16 @@ head {
   background-color: rgba(41, 41, 41, 0.555);
   overflow: hidden;
 }
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: silver;
+  color: #383838;
+  text-align: center;
+  border-style: groove;
+}
 .topnav a {
   float: left;
   color: #f2f2f2;
